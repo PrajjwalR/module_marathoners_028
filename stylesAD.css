@@ -72,8 +72,9 @@ div.container_A {
   color: #006bff;
   transition: color 0.3s ease;
 }
-.container2_A > a:hover,.container_A>a:hover{
-    color: #004bb5;
+.container2_A > a:hover,
+.container_A > a:hover {
+  color: #004bb5;
 }
 .container2_A .stats {
   display: flex;
@@ -123,88 +124,87 @@ div.container_A {
   letter-spacing: 1px;
 }
 .container2_A .logos > img {
-    padding: 20px 40px;
-    border: 0.5px solid rgba(0, 0, 0, 0.205);
-    border-radius: 10px;
-    background-color: #ffffff;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    transition: all 0.3s ease; 
+  padding: 20px 40px;
+  border: 0.5px solid rgba(0, 0, 0, 0.205);
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: all 0.3s ease;
 }
 
 .container2_A .logos > img:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    background-color: #f0f0f0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: #f0f0f0;
 }
-
 
 .logos > img.selected {
-    border: 2px solid #006bff; 
-    box-sizing: border-box;
+  border: 2px solid #006bff;
+  box-sizing: border-box;
 }
 .certification-section {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-direction: column;
-    margin-top: 100px;
-    margin-bottom: 100px;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .certification-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-  
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .certification-badge .badge {
-    background-color: #006bff;
-    color: #ffffff;
-    padding: 3px 8px;
-    border-radius: 12px;
-    font-size: 12px;
-    font-weight: bold;
+  background-color: #006bff;
+  color: #ffffff;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .certification-badge .certification {
-    font-size: 14px;
-    font-weight: 600;
-    color: #006bff;
+  font-size: 14px;
+  font-weight: 600;
+  color: #006bff;
 }
 
 .certification-section h2 {
-    color: #0b3558;
+  color: #0b3558;
   font-size: 40px;
   line-height: 15px;
   font-weight: 500;
 }
 
 .certification-logos {
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-bottom: 30px;
 }
 
 .certification-logos img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
 
 .certification-section .description {
-    font-size: 20px;
-    color: #476788;
-    width: 750px;
-    text-align: center;
+  font-size: 20px;
+  color: #476788;
+  width: 750px;
+  text-align: center;
 }
 
 .certification-section .learn-more {
-    font-size: 18px;
+  font-size: 18px;
   text-decoration: none;
   text-align: center;
   margin-bottom: 20px;
@@ -213,69 +213,67 @@ div.container_A {
 }
 
 .certification-section .learn-more:hover {
-    color: #004bb5;
+  color: #004bb5;
 }
 .scheduling-section {
-    background-color: #0b3558;
-    color: #ffffff;
-   margin: auto;
-   max-width: 1320px;
-    padding: 40px;
-    border-radius: 20px;
-    width: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 27px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+  background-color: #0b3558;
+  color: #ffffff;
+  margin: auto;
+  max-width: 1320px;
+  padding: 40px;
+  border-radius: 20px;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 27px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .scheduling-section h2 {
-    font-size: 40px;
-    line-height: 15px;
-    font-weight: 500;
-    
+  font-size: 40px;
+  line-height: 15px;
+  font-weight: 500;
 }
 
 .scheduling-section p {
-    font-size: 20px;
-    
+  font-size: 20px;
 }
 
 .scheduling-section .button-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .scheduling-section .button-container a {
-    padding: 14px 25px;
-    font-size: 23px;
-    
-    border-radius: 6px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 14px 25px;
+  font-size: 23px;
+
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .scheduling-section .button-container a.button-primary {
-    background-color: #006bff;
-    color: #ffffff;
-    border: none;
+  background-color: #006bff;
+  color: #ffffff;
+  border: none;
 }
 
 .scheduling-section .button-container a.button-primary:hover {
-    background-color: #0053cc;
+  background-color: #0053cc;
 }
 
 .scheduling-section .button-container a.button-secondary {
-    background-color: transparent;
-    color: #ffffff;
-    border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
 }
 
 .scheduling-section .button-container a.button-secondary:hover {
-    background-color: #ffffff;
-    color: #0b3558;
+  background-color: #ffffff;
+  color: #0b3558;
 }
