@@ -1,11 +1,106 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
 body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
+
+.pricing-containerA {
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    max-width: 1300px;
+    margin: auto;
+    align-items: center;
+    margin-top: 80px;
+}
+.pricingHead{
+    color: #0b3558;
+  font-size: 40px;
+  line-height: 15px;
+  font-weight: 500;
+    text-align: center;
+    margin: 40px;
+}
+.pricing-cardA {
+    background-color: #fff;
+    /* border: 1px solid #e0e0e0; */
+    border-radius: 8px;
+    padding: 30px;
+    width: 25%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #006bff ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    height: 550px;
+}
+
+.pricing-cardA > .titleA {
+    font-size: 2rem;
+    /* margin-bottom: 10px; */
+    color: #333;
+}
+
+.pricing-cardA > .descriptionA {
+    color: #777;
+    font-size: 1.1rem;
+    /* margin-bottom: 20px; */
+}
+
+.pricing-cardA > .priceA {
+    font-size: 2rem;
+    color:#006bff;
+    
+}
+
+.pricing-cardA > .priceA > .price-unitA {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.pricing-cardA > .btnA {
+    background-color:#006bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+.pricing-cardA > .featuresA {
+    /* list-style: none; */
+    padding: 0;
+
+}
+
+.pricing-cardA > .featuresA > .feature-itemA {
+    /* margin-bottom: 8px; */
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.pricing-cardA > .linkA {
+    color:#006bff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.teams-planA .recommendedA {
+    background-color:#006bff;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+   
+}
+
 div.container_A {
   display: flex;
   justify-content: center;
@@ -89,7 +184,7 @@ div.container_A {
   border-bottom: 5px solid #006bff;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 30px;
+  padding-top: 30px;
   border-radius: 10px;
   width: 300px;
   height: 220px;
@@ -277,3 +372,10 @@ div.container_A {
   background-color: #ffffff;
   color: #0b3558;
 }
+
+
+
+
+
+
+
