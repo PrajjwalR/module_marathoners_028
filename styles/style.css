@@ -51,6 +51,11 @@ header {
 #NavBrand {
   filter: saturate(2) hue-rotate(20deg);
 }
+#NavBrand img {
+  /* width: 100px; */
+  border-radius: 50px;
+  height: 65px;
+}
 nav {
   position: sticky;
   top: 0px;
