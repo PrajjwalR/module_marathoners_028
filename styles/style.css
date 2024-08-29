@@ -1,11 +1,10 @@
-/*? <!----------------------------------------------- < Main Section Styles > -----------------------------------------------> */
-section {
-  margin: 20px 180px;
-}
 body {
   overflow-x: hidden;
 }
 
+section {
+  margin: 20px 180px;
+}
 /* Navbar */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
@@ -14,6 +13,7 @@ body {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .flex {
   display: flex;
@@ -35,11 +35,11 @@ p {
 }
 /*todo <!----------------------------------------------- < Header Start > -----------------------------------------------> */
 
-.sticky {
+#stickynav {
   position: fixed !important;
   top: 0;
   box-sizing: border-box;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 0px 140px !important;
   z-index: 10;
   box-shadow: rgb(0 0 0 / 4%) 0px 4px 4px;
@@ -95,80 +95,6 @@ nav {
 }
 
 /*? <!----------------------------------------------- < Header End > -----------------------------------------------> */
-
-/*todo <!----------------------------------------------- < Footer Start > -----------------------------------------------> */
-.footereasy {
-  font-size: 2.36875rem;
-  line-height: 1.4;
-  font-weight: 700;
-  text-align: left;
-  color: rgb(11, 53, 88);
-  padding-bottom: 16px;
-}
-.footereasy + p {
-  font-size: 1.125rem;
-}
-.footer_section {
-  display: flex;
-  justify-content: space-between;
-}
-.footersecond {
-  display: flex;
-  justify-content: space-between;
-}
-.footersecond > label,
-.footerthird > label,
-.footerthird > b {
-  margin: 7px;
-  color: rgb(71, 103, 136);
-  font-size: 0.75rem;
-  line-height: 1.5;
-}
-.footerthird {
-  display: flex;
-  justify-content: left;
-}
-#deliveryinp {
-  padding: 10px 5px;
-  border-radius: 5px;
-  outline: none;
-  border: 0.25px solid grey;
-}
-
-#deliveryinp + button {
-  padding: 7px 10px !important;
-  font-size: 15px;
-  border-radius: 5px;
-}
-.footerLeft {
-  width: 32%;
-}
-#spinner {
-  display: none;
-  position: fixed;
-  top: 50px;
-  left: 70px;
-  z-index: 999999;
-}
-.footerRight {
-  width: 60%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-.footerRight div {
-  padding: 10px;
-  color: rgb(11, 53, 88);
-  font-size: 1rem;
-}
-.footerRight div:hover {
-  color: rgb(0, 107, 255);
-  cursor: pointer;
-}
-#footer {
-  padding: 20px 100px !important;
-}
-/*? <!----------------------------------------------- < Footer End > -----------------------------------------------> */
 
 /*! <!----------------------------------------------- < Media Queries > -----------------------------------------------> */
 
@@ -487,7 +413,7 @@ button {
 }
 
 .landingbuttons:hover {
-  color: rgb(0, 107, 255);
+  color: rgb(1, 65, 155);
   border-color: rgb(0, 107, 255);
   background-color: rgb(252, 250, 255);
 }
@@ -526,7 +452,7 @@ button {
   margin: 5px;
 }
 .activeDesign {
-  border-bottom: 3.5px solid rgb(32, 103, 210) !important;
+  border-bottom: 3.5px solid rgb(1, 65, 155) !important;
   filter: brightness(0) saturate(100%) invert(39%) sepia(100%) saturate(5529%)
     hue-rotate(209deg) brightness(103%) contrast(105%) !important;
 }
@@ -702,3 +628,77 @@ button {
     padding: 0px !important;
   }
 }
+
+/*todo <!----------------------------------------------- < Footer Start > -----------------------------------------------> */
+.footereasy {
+  font-size: 2.36875rem;
+  line-height: 1.4;
+  font-weight: 700;
+  text-align: left;
+  color: rgb(11, 53, 88);
+  padding-bottom: 16px;
+}
+.footereasy + p {
+  font-size: 1.125rem;
+}
+.footer_section {
+  display: flex;
+  justify-content: space-between;
+}
+.footersecond {
+  display: flex;
+  justify-content: space-between;
+}
+.footersecond > label,
+.footerthird > label,
+.footerthird > b {
+  margin: 7px;
+  color: rgb(71, 103, 136);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+.footerthird {
+  display: flex;
+  justify-content: left;
+}
+#deliveryinp {
+  padding: 10px 5px;
+  border-radius: 5px;
+  outline: none;
+  border: 0.25px solid grey;
+}
+
+#deliveryinp + button {
+  padding: 7px 10px !important;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.footerLeft {
+  width: 32%;
+}
+#spinner {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 70px;
+  z-index: 999999;
+}
+.footerRight {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.footerRight div {
+  padding: 10px;
+  color: rgb(11, 53, 88);
+  font-size: 1rem;
+}
+.footerRight div:hover {
+  color: rgb(0, 107, 255);
+  cursor: pointer;
+}
+#footer {
+  padding: 20px 100px !important;
+}
+/*? <!----------------------------------------------- < Footer End > -----------------------------------------------> */
