@@ -7,7 +7,8 @@ body {
     min-height: 100vh;
     font-family: "Jost", sans-serif;
     /* background: linear-gradient(to bottom, #281c2f, #a333ff, #ff1c7c); */
-    background: url("../Images/product/background_1.png") no-repeat;
+    /* background: url("../Images/product/background_1.png") no-repeat; */
+    background-color: white;
 
     background-size: cover;
 }
