@@ -38,6 +38,8 @@ p {
 }
 header {
   box-shadow: rgba(41, 39, 39, 0.04) 0px 4px 4px;
+  /* position: sticky; */
+  background-color: white;
 }
 #NavBrand {
   filter: saturate(2) hue-rotate(20deg);
