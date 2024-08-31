@@ -94,7 +94,7 @@ label {
 input {
     width: 60%;
     height: 20px;
-    background: #d9ff00;
+    background: lightgrey;
     justify-content: center;
     display: flex;
     margin: 20px auto;
