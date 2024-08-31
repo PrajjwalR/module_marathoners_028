@@ -11,6 +11,7 @@
 }
 body {
   overflow-x: hidden;
+  background-color: #cf78a3;;
 }
 #NavlinkParent > div:nth-child(1) > a {
   color: var(--blue);
@@ -50,7 +51,6 @@ body {
   height: auto;
   border: 1px solid transparent;
   margin: auto;
-  background-color: #476788;
 }
 #cont1 {
   width: 80%;
@@ -80,7 +80,7 @@ body {
   font-size: 16px;
 }
 #spn {
-  color: var(--darkblue);
+  color: var(--blue);
 }
 #calTag {
   color: var(--lightblue);
@@ -159,13 +159,12 @@ body {
   place-items: center;
   place-items: center;
   overflow: hidden;
-  /* background-color: #006bff; */
 }
 
 #slide-container {
   display: flex;
-  width: cal(350px * 18);
-  animation: scroll 10s linear infinite;
+  width: cal(250px * 18);
+  animation: scroll 20s linear infinite;
 }
 
 @keyframes scroll {
@@ -178,13 +177,12 @@ body {
 }
 
 #slide-images {
-  height: 350px;
-  width: 350px;
+  height: 250px;
+  width: 250px;
   display: flex;
   align-items: center;
   padding: 15px;
   perspective: 100px;
-  background-color: #8596ad;
 }
 img {
   width: 100px;
@@ -202,7 +200,6 @@ img:hover {
   margin-bottom: 100px;
   margin: auto;
   text-align: center;
-  /* background-color: #476788; */
 }
 
 #sec4_intro1 {
@@ -228,7 +225,6 @@ img:hover {
   justify-content: space-evenly;
   margin-top: 200px;
   margin: auto;
-  background-color: #e3eaf5;
 }
 
 #analytics_1 {
@@ -296,7 +292,7 @@ img:hover {
 }
 
 .section_7 {
-  background-color: #4e8ad2;
+  background-color: #f3f8fe;
   font-family: "Gilroy-Medium", sans-serif;
 }
 #section_7_1 {
@@ -390,7 +386,6 @@ img:hover {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 60px;
-  background-color: #adbed3;
 }
 
 #child_img {
@@ -441,7 +436,7 @@ img:hover {
   border: 1px solid red;
 }
 .sector_12 {
-  background-color: #b0c0d3;
+  background-color: #f3f8fe;
   display: flex;
   justify-content: space-evenly;
   padding-top: 50px;
@@ -468,11 +463,11 @@ img:hover {
   color: var(--lightblue);
 }
 #sector_12_left_p2_span {
-  color: var(--lightblue);
+  color: var(--blue);
 }
 #sector_12_left_p2_span:hover {
   cursor: pointer;
-  color: var(--lightblue);
+  color: var(--darkblue);
 }
 .grow {
   padding: 10px 10px 20px 20px;
@@ -517,8 +512,6 @@ img:hover {
   background-size: cover;
   text-align: center;
   font-family: "Gilroy-Medium", sans-serif;
-  background-color: #a0a1a2;
-  
 }
 #sector_13_child {
   padding-top: 70px;
@@ -562,7 +555,7 @@ img:hover {
   font-family: "Gilroy-Medium", sans-serif;
   font-size: 18px;
   border-radius: 7px;
-  /* border: 1px solid var(--white); */
+  border: 1px solid var(--white);
 }
 #sales:hover {
   background-color: var(--white);
