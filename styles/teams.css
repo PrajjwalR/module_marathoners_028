@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(216, 179, 230);
+}
+
+/* Container Styles */
+body > .containerAD {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* Heading inside container */
+body > .containerAD > h1 {
+  color: #2b2d42;
+  font-size: 2rem;
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+
+/* Cards Wrapper */
+body > .containerAD > .cardsAD {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px; /* Adds space between the cards */
+}
+
+/* Individual Card Styling */
+body > .containerAD > .cardsAD > .cardAD {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image inside each card */
+body > .containerAD > .cardsAD > .cardAD > img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #ddd; /* Adds a subtle separator */
+}
+
+/* Heading inside each card */
+body > .containerAD > .cardsAD > .cardAD > h2 {
+  margin: 20px 15px 10px;
+  color: #2b2d42;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Paragraph inside each card */
+body > .containerAD > .cardsAD > .cardAD > p {
+  color: #555;
+  font-size: 1rem;
+  margin: 0 15px 20px;
+}
+
+/* Learn more link inside each card */
+body > .containerAD > .cardsAD > .cardAD > .learn-moreAD {
+  margin: 0 15px 20px;
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* Hover effect for cards */
+body > .containerAD > .cardsAD > .cardAD:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  body > .containerAD > .cardsAD > .cardAD {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body > .containerAD > .cardsAD > .cardAD {
+    width: 100%;
+  }
+}
+
+
+.containerADE {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Badges Section */
+.badges-containerADE {
+    margin-bottom: 60px;
+}
+
+.badges-titleADE {
+    font-size: 1.5rem;
+    color: #2b2d42;
+    margin-bottom: 20px;
+}
+
+.badgesADE {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.badgeADE {
+    max-width: 100px;
+}
+
+/* Smarter Scheduling Section */
+.schedule-sectionADE {
+    background-color: #1b2a41;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-contentADE {
+    text-align: left;
+    max-width: 60%;
+}
+
+.schedule-contentADE h3 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.schedule-contentADE p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: #d1d1d1;
+}
+
+.schedule-buttonsADE {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-signupADE,
+.btn-demoADE {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-signupADE {
+    background-color: #1a73e8;
+    color: #ffffff;
+}
+
+.btn-demoADE {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.btn-signupADE:hover {
+    background-color: #005cbf;
+}
+
+.btn-demoADE:hover {
+    background-color: #ffffff;
+    color: #1b2a41;
+}
