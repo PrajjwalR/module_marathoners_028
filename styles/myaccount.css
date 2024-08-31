@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: "Jost", sans-serif;
+    font-family: "Inter Tight", sans-serif;
     /* background: linear-gradient(to bottom, #281c2f, #a333ff, #ff1c7c); */
     /* background: url("../Images/product/background_1.png") no-repeat; */
     background-color: white;
@@ -52,7 +54,7 @@ body {
 .brand>p {
     font-size: 20px;
     color: #89ff3b;
-    font-family: "Jost", sans-serif;
+    font-family: "Inter Tight", sans-serif;
     font-weight: bold;
 }
 
@@ -222,7 +224,7 @@ input[type="submit"]:hover {
 #social>a span {
     color: #666;
     position: absolute;
-    font-family: sans-serif;
+    font-family: "Inter Tight";
     bottom: 0;
     left: -25px;
     right: -25px;
