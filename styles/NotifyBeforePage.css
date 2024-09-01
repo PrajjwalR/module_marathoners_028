@@ -1,0 +1,96 @@
+.container {
+    /* background-color: white; */
+    padding: 30px;
+    /* border-radius: 12px; */
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+}
+.container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.form-group label {
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #555;
+}
+.form-group input[type="text"],
+.form-group select {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+    width: 100%;
+}
+.form-group input[type="text"]:focus,
+.form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+.edit-email {
+    margin-top: 30px;
+}
+.edit-email h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.edit-email label {
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #555;
+}
+.edit-email input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+.edit-email input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+.save-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.save-button button {
+    padding: 14px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.save-button button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+.form-group-inline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.form-group-inline input[type="text"] {
+    width: auto;
+    flex: 1;
+}
+.form-group-inline select {
+    width: auto;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeetSync</title>
+
+    <link rel="stylesheet" href="./styles/calender.css" />
+    <link rel="stylesheet" href="./styles/Navbar.css" />
+    <link rel="stylesheet" href="./styles/Dashboard.css" />
+    <link rel="stylesheet" href="./styles/common.css" />
+    <script src="./javascript/calendar.js" defer></script>
+  </head>
+
+  <body style="background-color: #d8b3e6">
+    <div id="spinner">
+      <img style="width: 70px" src="Images/spinner.gif" alt="" />
+    </div>
+    <!--!--------------------------------------------- Header ----------------------------------------------->
+    <header id="Header">
+      <div id="navbar" class="margins">
+        <div>
+          <a href="Dashboard.html"
+            ><img
+              style="border-radius: 20px"
+              src="./Images/product/meetsync_log.png"
+              alt="logo"
+          /></a>
+        </div>
+        <div id="linav">
+          <ul>
+            <li><a href="./Dashboard.html">Home</a></li>
+            <li><a href="./Dashboard.html">Availability</a></li>
+            <li><a href="./Dashboard.html">Intregations</a></li>
+          </ul>
+        </div>
+
+        <div id="Logout">
+          <div class="namecircle">
+            <img
+              style="width: 22px; filter: invert()"
+              src="Images/logout.svg"
+              alt=""
+            />
+          </div>
+          <a href="Dashboard.html" id="UserShow3">Account</a>
+        </div>
+      </div>
+
+      <hr style="border: 1px solid rgba(128, 128, 128, 0.158)" />
+
+      <div id="sticky">
+        <div id="topnav">
+          <p>MeetSync</p>
+
+          <div id="botnav">
+            <ul id>
+              <li><a href="Dashboard.html">Event Types</a></li>
+              <li><a href="scheduleEvent.html">Schedule Event </a></li>
+              <li><a href="NotifyBeforePage.html">Workflows</a></li>
+              <li><a href="calendar.html">Calendar</a></li>
+            </ul>
+          </div>
+
+          <a href="CreateEvent.html">
+            <p id="Create">+ Create</p>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!--!--------------------------------------------- Main Body ----------------------------------------------->
+    <main>
+      <section id="Home">
+        <div class="CalendarHold">
+          <div id="calendar"></div>
+        </div>
+      </section>
+      <section>
+        <center>
+          <h1>Mark your events on your calendar.</h1>
+        </center>
+      </section>
+    </main>
+    <!--!--------------------------------------------- Footer ----------------------------------------------->
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/index.global.min.js"></script>
+  </body>
+</html>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

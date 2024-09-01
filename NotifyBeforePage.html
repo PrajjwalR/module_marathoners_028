@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/Dashboard.css" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/NotifyBeforePage.css" />
+  </head>
+
+  <body style="background-color: rgb(216, 179, 230)">
+    <!--todo--------------------------------------------- <Header> ----------------------------------------------->
+    <!-- <header>
+   
+    <div id="navbar" class="margins">
+    
+      <div id="linav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./Dashboard.html">Availability</a></li>
+          <li><a href="./Dashboard.html">Intregations</a></li>
+        </ul>
+      </div>
+       <div id="Logout">
+        <div class="namecircle">
+          <img style="width: 22px; filter: invert()" src="Images/logout.svg" alt="" />
+        </div>
+        <a href="Dashboard.html" id="UserShow3">Account</a>
+      </div>
+    </div>
+
+    <hr style="border: 1px solid rgba(128, 128, 128, 0.158)" />
+
+    <div id="sticky">
+      <div id="topnav">
+        <p>MeetSync</p>
+     <div  class="createandcal">
+      <a href="CreateEvent.html">
+        <p id="Create">+ Create Event</p>
+      </a>
+      <a href="calendar.html">
+        <p id="Create">My Calendar</p>
+      </a>
+     </div>
+      </div>
+      <div id="botnav">
+        <ul>
+          <li><a href="Dashboard.html">Event Types</a></li>
+          <li><a href="scheduleEvent.html">Schedule Event </a></li>
+          <li><a href="NotifyBeforePage.html">Workflows</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </header> -->
+
+    <header id="Header">
+      <div id="navbar" class="margins">
+        <div>
+          <a href="Dashboard.html"
+            ><img
+              style="border-radius: 20px"
+              src="./Images/product/meetsync_log.png"
+              alt="logo"
+          /></a>
+        </div>
+        <div id="linav">
+          <ul>
+            <li><a href="./Dashboard.html">Home</a></li>
+            <li><a href="./Dashboard.html">Availability</a></li>
+            <li><a href="./Dashboard.html">Intregations</a></li>
+          </ul>
+        </div>
+
+        <div id="Logout">
+          <div class="namecircle">
+            <img
+              style="width: 22px; filter: invert()"
+              src="Images/logout.svg"
+              alt=""
+            />
+          </div>
+          <a href="Dashboard.html" id="UserShow3">Account</a>
+        </div>
+      </div>
+
+      <hr style="border: 1px solid rgba(128, 128, 128, 0.158)" />
+
+      <div id="sticky">
+        <div id="topnav">
+          <p>MeetSync</p>
+
+          <div id="botnav">
+            <ul id>
+              <li><a href="Dashboard.html">Event Types</a></li>
+              <li><a href="scheduleEvent.html">Schedule Event </a></li>
+              <li><a href="NotifyBeforePage.html">Workflows</a></li>
+              <li><a href="calendar.html">Calendar</a></li>
+            </ul>
+          </div>
+
+          <a href="CreateEvent.html">
+            <p id="Create">+ Create</p>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="form-group">
+        <label for="workflow-name">Workflow name</label>
+        <input
+          type="text"
+          id="workflow-name"
+          placeholder="Email reminder to host"
+        />
+      </div>
+      <div class="form-group">
+        <label for="event-type">Which event types will this apply to?</label>
+        <select id="event-type">
+          <option value="">Select event</option>
+          <!-- Add event options here -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="reminder-time">When this happens</label>
+        <div class="form-group-inline">
+          <input type="text" id="reminder-time" placeholder="Enter value" />
+          <select id="time-unit">
+            <option value="minutes">minutes</option>
+            <!-- Add other time units if necessary -->
+          </select>
+          <span>: before event starts</span>
+        </div>
+      </div>
+
+      <div class="edit-email">
+        <h3>Edit: Email to host</h3>
+        <label for="email-subject">Subject</label>
+        <input
+          type="text"
+          id="email-subject"
+          placeholder="Reminder: {{event_name}} is at {{event_time}} on {{event_date}}"
+        />
+
+        <label for="email-body">Body</label>
+        <input
+          type="text"
+          id="email-body"
+          placeholder="Hi {{event_organizer_name}}, This is a friendly reminder that your {{event_name}} is at {{event_time}} on {{event_date}}."
+        />
+      </div>
+
+      <div class="save-button">
+        <button type="button">Save</button>
+      </div>
+    </div>
+  </body>
+</html>
