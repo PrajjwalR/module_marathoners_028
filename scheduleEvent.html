@@ -37,7 +37,9 @@
 
     <div id="sticky">
       <div id="topnav">
-        <p>My Calendly</p>
+        <a href="Dashboard.html">
+          <p style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 1.5rem;">My Calendly</p>
+        </a>
         <a href="calendar.html">
           <p id="Create">My Calendar</p>
         </a>
@@ -58,7 +60,9 @@
   <div id="event_nav">
     <div>
       <div>
-        <p>Back</p>
+        <a href="Dashboard.html">
+          <p style="color: black; border-radius: 20px; padding: 10px; border: 1px solid black;">Back</p>
+        </a>
       </div>
 
       <div>
@@ -82,24 +86,21 @@
         </div>
       </div>
 
-      <div class="next_cancel" id="all">
-        <p class="cancelbutton">Cancel</p>
-        <p class="nextbutton">Next</p>
-      </div>
+      
     </div>
     <hr />
-    <form id="EventForm">
+    <form id="EventForm" >
       <div class="FlexEvent">
         <div id="event_form">
           <div>
-            <label>Event name</label>
+            <label>Name</label>
             <br />
-            <input type="text" id="event_name" required />
+            <input type="text" id="event_name" required  />
           </div>
           <div>
             <label>Location</label>
             <br />
-            <select name="rental-option" id="event_option" required>
+            <select  name="rental-option" id="event_option" required>
               <option value="">Add a location</option>
               <option value="In-Person-meeting">In-person meeting</option>
               <option value="Call">Phone call</option>
@@ -182,7 +183,7 @@
 
     <div class="next_cancel bot">
       <button id="CancelButtonW" class="cancelbutton">Cancel</button>
-      <input id="NextButtonW" type="submit" class="nextbutton" value="Next">
+      <input onclick="window.location.href = './Dashboard.html' " id="NextButtonW" type="submit" class="nextbutton" value="Submit">
     </div>
   </div>
 </form>
@@ -192,3 +193,27 @@
 </note>
 
 </html>
+
+<script>
+  let form = document.getElementById("EventForm")
+  let userName = document.getElementById("event_name")
+  console.log(userName);
+  let eventLink = document.getElementById("event_link")
+
+  // let location = function getValue(){
+
+  // }
+  // console.log(form);
+  form.addEventListener("submit", submitFunc)
+
+  function submitFunc(){
+    let userValue = userName.value
+    // console.log(userValue);
+    let eventLinkValue = eventLink.value
+    localStorage.setItem("userName", JSON.stringify(userValue))
+    localStorage.setItem("eventLink", JSON.stringify(eventLinkValue));
+    // console.log(localStorage.getItem("userName"));
+  }
+
+
+</script>
