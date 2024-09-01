@@ -13,9 +13,9 @@
 <body style="background-color: rgb(216, 179, 230);">
   <!--todo--------------------------------------------- <Header> ----------------------------------------------->
   <header>
-   
+
     <div id="navbar" class="margins">
-    
+
       <div id="linav">
         <ul>
           <li><a href="./index.html">Home</a></li>
@@ -23,7 +23,7 @@
           <li><a href="./Dashboard.html">Intregations</a></li>
         </ul>
       </div>
-       <div id="Logout">
+      <div id="Logout">
         <div class="namecircle">
           <img style="width: 22px; filter: invert()" src="Images/logout.svg" alt="" />
         </div>
@@ -36,14 +36,14 @@
     <div id="sticky">
       <div id="topnav">
         <p>My Calendly</p>
-     <div  class="createandcal">
-      <a href="CreateEvent.html">
-        <p id="Create">+ Create Event</p>
-      </a>
-      <a href="calendar.html">
-        <p id="Create">My Calendar</p>
-      </a>
-     </div>
+        <div class="createandcal">
+          <a href="./CreateEvent.html">
+            <p id="Create">+ Create Event</p>
+          </a>
+          <a href="./calendar.html">
+            <p id="Create">My Calendar</p>
+          </a>
+        </div>
       </div>
       <div id="botnav">
         <ul>
@@ -67,24 +67,25 @@
         <a href="#">MeetSync.com/<span id="UserShow2">Rahul</span></a>
       </div>
     </div>
-    <button id="deletedBtn" style="color: white; font-size: 1.5rem; background-color: red; border-radius: 20px; height: 70px; width: 150px; border: 2px solid black;">Delete</button>
+    <button id="deletedBtn"
+      style="color: white; font-size: 1.5rem; background-color: red; border-radius: 20px; height: 70px; width: 150px; border: 2px solid black;">Delete</button>
   </div>
 
   <!-- Script -->
-    <script>
-      let usersName = document.getElementById("UserShow");
-      usersName.innerText = JSON.parse(localStorage.getItem("userName"))
+  <script>
+    let usersName = document.getElementById("UserShow");
+    usersName.innerText = JSON.parse(localStorage.getItem("userName"))
 
-      let nameLink = document.getElementById("UserShow2")
+    let nameLink = document.getElementById("UserShow2")
     nameLink.innerText = JSON.parse(localStorage.getItem("userName"))
 
-    let todBody  = document.getElementById("topBody")
-    let deleteBtn  = document.getElementById("deletedBtn")
+    let todBody = document.getElementById("topBody")
+    let deleteBtn = document.getElementById("deletedBtn")
 
-    deleteBtn.addEventListener("click", ()=>{
+    deleteBtn.addEventListener("click", () => {
       todBody.innerHTML = ''
     })
-    </script>
+  </script>
 
   <hr class="margins" />
 
@@ -100,4 +101,5 @@
   <script src="JS/Dashboard.js"></script>
 </body>
 </note>
+
 </html>
