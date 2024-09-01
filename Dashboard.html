@@ -5,24 +5,17 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Dashboard</title>
-
-
   <link rel="stylesheet" href="styles/Dashboard.css" />
   <link rel="stylesheet" href="styles/common.css" />
 </head>
 
-<body>
+<body style="background-color: rgb(216, 179, 230);">
   <!--todo--------------------------------------------- <Header> ----------------------------------------------->
   <header>
-    <div id="spinner">
-      <img style="width: 70px" src="Images/spinner.gif" alt="" />
-    </div>
+   
     <div id="navbar" class="margins">
-      <div>
-        <a href="index.html"><img src="Images/Icons/MyCalBrand.png" alt="logo" /></a>
-      </div>
+    
       <div id="linav">
         <ul>
           <li><a href="./index.html">Home</a></li>
@@ -55,7 +48,7 @@
       <div id="botnav">
         <ul>
           <li><a href="Dashboard.html">Event Types</a></li>
-          <li><a href="Dashboard.html">Schedule Event </a></li>
+          <li><a href="scheduleEvent.html">Schedule Event </a></li>
           <li><a href="NotifyBeforePage.html">Workflows</a></li>
           <li><a href="calendar.html">Calendar</a></li>
         </ul>
@@ -74,16 +67,24 @@
         <a href="#">MeetSync.com/<span id="UserShow2">Rahul</span></a>
       </div>
     </div>
-
-    <div>
-      <div>
-       <p><a style="color: rgb(0, 119, 255);font-weight: 400;" href="CreateEvent.html"> + New Event Type</a></p>
-      </div>
-      <div>
-        <img src="https://cdn-icons-png.flaticon.com/512/126/126472.png" alt="" />
-      </div>
-    </div>
+    <button id="deletedBtn" style="color: white; font-size: 1.5rem; background-color: red; border-radius: 20px; height: 70px; width: 150px; border: 2px solid black;">Delete</button>
   </div>
+
+  <!-- Script -->
+    <script>
+      let usersName = document.getElementById("UserShow");
+      usersName.innerText = JSON.parse(localStorage.getItem("userName"))
+
+      let nameLink = document.getElementById("UserShow2")
+    nameLink.innerText = JSON.parse(localStorage.getItem("userName"))
+
+    let todBody  = document.getElementById("topBody")
+    let deleteBtn  = document.getElementById("deletedBtn")
+
+    deleteBtn.addEventListener("click", ()=>{
+      todBody.innerHTML = ''
+    })
+    </script>
 
   <hr class="margins" />
 

@@ -74,7 +74,7 @@ body > .containerAD > .cardsAD > .cardAD > p {
 body > .containerAD > .cardsAD > .cardAD > .learn-moreAD {
   margin: 0 15px 20px;
   text-decoration: none;
-  color: #1a73e8;
+  color: rgb(1, 65, 155);
   font-weight: 500;
   display: inline-block;
 }
@@ -172,7 +172,7 @@ body > .containerAD > .cardsAD > .cardAD:hover {
 }
 
 .btn-signupADE {
-    background-color: #1a73e8;
+    background-color:  rgb(1, 65, 155);
     color: #ffffff;
 }
 
