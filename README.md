@@ -31,3 +31,12 @@ MeetSync is a web-based scheduling application that simplifies meeting bookings 
    git clone https://github.com/PrajjwalR/module_marathoners_028.git
    cd meetsync
    ```
+
+## Usage
+
+1. Open the deployed app in your web browser: [MeetSync](https://module-marathoners-028.vercel.app/).
+2. Register or log in using your email and password.
+3. Set your available time slots in the profile section.
+4. Share your MeetSync link with others to allow them to book a meeting.
+5. Manage your appointments from the dashboard.
+
