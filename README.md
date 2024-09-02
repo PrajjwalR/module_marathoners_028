@@ -28,6 +28,6 @@ MeetSync is a web-based scheduling application that simplifies meeting bookings 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/meetsync.git
+   git clone https://github.com/PrajjwalR/module_marathoners_028.git
    cd meetsync
    ```
